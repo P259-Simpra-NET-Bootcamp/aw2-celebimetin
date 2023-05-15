@@ -43,3 +43,11 @@ Email alanini unique olmalidir.
         } 
     }
 ```
+EF Generic Repository ile projeyi oluşturuldu
+Data katmanı context, domains, model configuration, repositories ve migrations bulunuyor
+Araya bir services katmanı ekleyerek WebAPI katmanı services üzerinden data katmanı ile haberleşmesi sağladım.
+Services katmanında AutoMapper ile mapping yapıldı.
+Request, Response schema'ları oluşturuldu.
+Request schema'sı için Add ve Update enpointlerine FluentValidation eklendi.
+WebAPI katmanında bir adet Controller eklendi Add, Update, Delete, GetAll, GetbyId, GetByEmail ve GetByPhone endpoint'leri eklendi.
+Custom extensions sınıfları oluşturuldu.
